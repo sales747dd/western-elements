@@ -1,39 +1,69 @@
-export default function Footer() {
+export default function Footer({ onQuoteOpen }) {
   return (
-    <footer id="contact" className="footer">
+    <footer id="contact" className="footer" aria-label="Site footer">
       <div className="container">
-        <div className="footer-content">
-          <div className="footer-col">
-            <h4>Western Elements Woodworking</h4>
-            <p>Elevating living spaces with unique, custom-made furniture crafted specifically for you.</p>
-          </div>
-          
-          <div className="footer-col">
-            <h4>Contact Info</h4>
-            <p>📞 250-682-6932</p>
-            <p>✉️ josh@westelementsstudio.ca</p>
-            <p>📍 Serving BC and Alberta</p>
-          </div>
-          
-          <div className="footer-col">
-            <h4>Request a Consultation</h4>
-            <form onSubmit={e => e.preventDefault()}>
-              <div className="form-group">
-                <input type="text" placeholder="Your Name" required />
+        <div className="footer-grid">
+
+          <div className="footer-brand">
+            <div className="logo-wrap">
+              <img src="/assets/logo.jpg" alt="WE Logo" className="logo-img" />
+              <div className="logo-text">
+                <span className="brand">Western Elements</span>
+                <span className="sub">Woodworking</span>
               </div>
-              <div className="form-group">
-                <input type="email" placeholder="Your Email" required />
-              </div>
-              <div className="form-group">
-                <textarea placeholder="Tell us about your project..." required></textarea>
-              </div>
-              <button type="submit" className="btn">Send Message</button>
-            </form>
+            </div>
+            <p>
+              Handcrafted custom wood furniture and art pieces serving homeowners across 
+              British Columbia and Alberta. Every piece built uniquely for you.
+            </p>
           </div>
+
+          <div className="footer-col">
+            <h4>Navigation</h4>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#gallery">Gallery</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <div className="footer-col">
+            <h4>Services</h4>
+            <ul>
+              <li><a href="#services">Custom Tables</a></li>
+              <li><a href="#services">Cutting Boards & Art</a></li>
+              <li><a href="#services">Shelving Units</a></li>
+              <li><a href="#services">Countertops & Islands</a></li>
+            </ul>
+          </div>
+
+          <div className="footer-col">
+            <h4>Get in Touch</h4>
+            <div className="footer-contact-item">
+              <span className="icon" aria-hidden="true">📞</span>
+              <a href="tel:+12506826932">250-682-6932</a>
+            </div>
+            <div className="footer-contact-item">
+              <span className="icon" aria-hidden="true">✉</span>
+              <a href="mailto:josh@westelementsstudio.ca">josh@westelementsstudio.ca</a>
+            </div>
+            <div className="footer-contact-item">
+              <span className="icon" aria-hidden="true">📍</span>
+              <span>Serving BC &amp; Alberta</span>
+            </div>
+            <br/>
+            <button id="footer-quote-btn" className="btn btn-primary" onClick={onQuoteOpen} style={{ fontSize: '0.85rem', padding: '0.75rem 1.5rem' }}>
+              Get a Free Quote
+            </button>
+          </div>
+
         </div>
-        
-        <div className="copyright">
-          &copy; {new Date().getFullYear()} Western Elements Woodworking. All Rights Reserved.
+
+        <div className="footer-bottom">
+          <span>&copy; {new Date().getFullYear()} Western Elements Woodworking. All rights reserved.</span>
+          <span>Handcrafted with ❤ in British Columbia</span>
         </div>
       </div>
     </footer>

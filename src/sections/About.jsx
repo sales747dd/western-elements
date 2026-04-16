@@ -1,17 +1,38 @@
 export default function About() {
   return (
     <section id="about" className="about-section">
-      <div className="container about-content">
-        <div className="about-image">
-          <img src="/assets/table.png" alt="Woodworking detail" />
+      <div className="container about-grid">
+        <div className="about-img-wrap">
+          <img
+            src="/assets/img-table-lichtenberg.jpg"
+            alt="Live-edge coffee table with blue lichtenberg fractal epoxy inlay"
+          />
         </div>
         <div className="about-text">
-          <h2>Crafting Something Truly Special</h2>
-          <p>At Western Elements Woodworking, we understand the desire for a living space that stands out. We know you value comforting and cool home aesthetics, and that's exactly what we deliver.</p>
-          <p>Say goodbye to typical, mass-produced furnishings. We partner with you to create unique, special pieces that perfectly complement your home and lifestyle.</p>
-          <p>Whether you need a custom dining table to gather your family around, or bespoke shelving that perfectly frames your cherished items, our craftsmanship is dedicated to elevating your environment.</p>
-          <br/>
-          <a href="#services" className="btn">View Our Offerings</a>
+          <span className="section-eyebrow">Our Craft</span>
+          <h2 className="section-title">Built Different. Built for You.</h2>
+          <p className="section-subtitle">
+            We believe your home deserves something that can't be found in any store. Every piece we create 
+            starts with a conversation about your space, your style, and your story.
+          </p>
+          <p className="section-subtitle" style={{ marginTop: '1rem' }}>
+            From dramatic lichtenberg fractal burns and glowing blue resin rivers to hand-carved coastal art, 
+            our work is genuinely one-of-a-kind. No two pieces are ever alike.
+          </p>
+          <div className="about-stat-row">
+            <div className="about-stat">
+              <strong>100%</strong>
+              <span>Handcrafted</span>
+            </div>
+            <div className="about-stat">
+              <strong>2</strong>
+              <span>Provinces Served</span>
+            </div>
+            <div className="about-stat">
+              <strong>0</strong>
+              <span>Mass-Produced Pieces</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
