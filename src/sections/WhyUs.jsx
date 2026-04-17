@@ -1,22 +1,18 @@
 export default function WhyUs() {
   const features = [
     {
-      icon: '🌳',
       title: 'Truly Unique Pieces',
       desc: 'Every item we build is one-of-a-kind. No templates, no shortcuts — just genuine custom craftsmanship.',
     },
     {
-      icon: '🔵',
-      title: 'Blue Resin Specialists',
-      desc: 'We specialize in stunning blue epoxy resin inlays, lichtenberg fractal burns, and ocean-inspired designs.',
+      title: 'Custom Woodworking',
+      desc: 'We specialize in bespoke custom woodworking. Tell us what you envision, and we will bring it to life using premium wood selections.',
     },
     {
-      icon: '🏠',
-      title: 'Designed for Your Home',
-      desc: 'We work with you to ensure every piece fits your space, lifestyle, and aesthetic perfectly.',
+      title: 'Perfectly Fit For Your Space',
+      desc: 'Whether it\'s a dining table or built-in shelving, we ensure the final product perfectly matches the exact dimensions and aesthetic of your room.',
     },
     {
-      icon: '🛡️',
       title: 'Built to Last a Lifetime',
       desc: 'Premium materials and meticulous finishing mean our pieces are heirloom-quality — built to be passed down.',
     },
@@ -35,7 +31,6 @@ export default function WhyUs() {
         <div className="whyus-grid">
           {features.map((f, i) => (
             <div key={i} className="whyus-item">
-              <div className="whyus-icon" aria-hidden="true">{f.icon}</div>
               <h3>{f.title}</h3>
               <p>{f.desc}</p>
             </div>

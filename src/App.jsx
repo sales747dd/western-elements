@@ -1,16 +1,12 @@
 import { useState } from 'react'
+import { Routes, Route } from 'react-router-dom'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import QuoteModal from './components/QuoteModal'
-import Hero from './sections/Hero'
-import TrustBar from './sections/TrustBar'
-import About from './sections/About'
-import Services from './sections/Services'
-import Process from './sections/Process'
-import Gallery from './sections/Gallery'
-import Testimonials from './sections/Testimonials'
-import WhyUs from './sections/WhyUs'
-import CTABanner from './sections/CTABanner'
+import HomePage from './pages/HomePage'
+import AboutPage from './pages/AboutPage'
+import ServicesPage from './pages/ServicesPage'
+import GalleryPage from './pages/GalleryPage'
 import './index.css'
 
 function App() {
@@ -22,15 +18,12 @@ function App() {
     <>
       <Header onQuoteOpen={openModal} />
       <main>
-        <Hero     onQuoteOpen={openModal} />
-        <TrustBar />
-        <About />
-        <Services onQuoteOpen={openModal} />
-        <Process />
-        <Gallery />
-        <Testimonials />
-        <WhyUs />
-        <CTABanner onQuoteOpen={openModal} />
+        <Routes>
+          <Route path="/" element={<HomePage onQuoteOpen={openModal} />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/services" element={<ServicesPage onQuoteOpen={openModal} />} />
+          <Route path="/gallery" element={<GalleryPage />} />
+        </Routes>
       </main>
       <Footer onQuoteOpen={openModal} />
       {modalOpen && <QuoteModal onClose={closeModal} />}

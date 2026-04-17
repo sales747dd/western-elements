@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import QuoteModal from './QuoteModal';
 
 export default function Header({ onQuoteOpen }) {
@@ -13,19 +14,19 @@ export default function Header({ onQuoteOpen }) {
   return (
     <header className={`header${scrolled ? ' scrolled' : ''}`}>
       <div className="container header-inner">
-        <a href="#home" className="logo-wrap" aria-label="Western Elements Woodworking Home">
+        <Link to="/" className="logo-wrap" aria-label="Western Elements Woodworking Home">
           <img src="/assets/logo.jpg" alt="WE Logo" className="logo-img" />
           <div className="logo-text">
             <span className="brand">Western Elements</span>
             <span className="sub">Woodworking</span>
           </div>
-        </a>
+        </Link>
 
         <nav aria-label="Main Navigation">
           <ul className="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#gallery">Gallery</a></li>
+            <li><Link to="/about">About</Link></li>
+            <li><Link to="/services">Services</Link></li>
+            <li><Link to="/gallery">Gallery</Link></li>
             <li><a href="#contact">Contact</a></li>
             <li>
               <button id="nav-quote-btn" className="btn btn-primary" onClick={onQuoteOpen}>

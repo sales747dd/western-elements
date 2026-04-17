@@ -4,7 +4,6 @@ export default function Hero({ onQuoteOpen }) {
       <div className="hero-bg" aria-hidden="true"></div>
 
       <div className="hero-content">
-        <div className="hero-badge">✦ Handcrafted in BC &amp; Alberta</div>
         <h1>
           Where Wood Meets<br />
           <em>Art &amp; Soul.</em>

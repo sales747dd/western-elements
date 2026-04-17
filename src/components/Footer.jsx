@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 export default function Footer({ onQuoteOpen }) {
   return (
     <footer id="contact" className="footer" aria-label="Site footer">
@@ -5,13 +7,13 @@ export default function Footer({ onQuoteOpen }) {
         <div className="footer-grid">
 
           <div className="footer-brand">
-            <div className="logo-wrap">
+            <Link to="/" className="logo-wrap" style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
               <img src="/assets/logo.jpg" alt="WE Logo" className="logo-img" />
               <div className="logo-text">
                 <span className="brand">Western Elements</span>
                 <span className="sub">Woodworking</span>
               </div>
-            </div>
+            </Link>
             <p>
               Handcrafted custom wood furniture and art pieces serving homeowners across 
               British Columbia and Alberta. Every piece built uniquely for you.
@@ -21,10 +23,10 @@ export default function Footer({ onQuoteOpen }) {
           <div className="footer-col">
             <h4>Navigation</h4>
             <ul>
-              <li><a href="#home">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#services">Services</a></li>
-              <li><a href="#gallery">Gallery</a></li>
+              <li><Link to="/">Home</Link></li>
+              <li><Link to="/about">About</Link></li>
+              <li><Link to="/services">Services</Link></li>
+              <li><Link to="/gallery">Gallery</Link></li>
               <li><a href="#contact">Contact</a></li>
             </ul>
           </div>
@@ -32,10 +34,10 @@ export default function Footer({ onQuoteOpen }) {
           <div className="footer-col">
             <h4>Services</h4>
             <ul>
-              <li><a href="#services">Custom Tables</a></li>
-              <li><a href="#services">Cutting Boards & Art</a></li>
-              <li><a href="#services">Shelving Units</a></li>
-              <li><a href="#services">Countertops & Islands</a></li>
+              <li><Link to="/services">Custom Tables</Link></li>
+              <li><Link to="/services">Cutting Boards & Art</Link></li>
+              <li><Link to="/services">Shelving Units</Link></li>
+              <li><Link to="/services">Countertops & Islands</Link></li>
             </ul>
           </div>
 
