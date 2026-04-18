@@ -29,7 +29,7 @@ export default function Gallery({ preview }) {
             </div>
           )}
         </div>
-        <div className="gallery-grid" style={preview ? { gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', display: 'flex', flexWrap: 'wrap', justifyContent: 'center' } : {}}>
+        <div className={`gallery-grid ${preview ? 'is-preview' : ''}`}>
           {displayedItems.map((item, i) => (
             <div key={i} className="gallery-item">
               <img src={item.src} alt={item.label} loading="lazy" />

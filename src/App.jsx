@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Routes, Route } from 'react-router-dom'
+import ScrollToTop from './components/ScrollToTop'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import QuoteModal from './components/QuoteModal'
@@ -16,6 +17,7 @@ function App() {
 
   return (
     <>
+      <ScrollToTop />
       <Header onQuoteOpen={openModal} />
       <main>
         <Routes>
