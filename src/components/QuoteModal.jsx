@@ -1,4 +1,14 @@
+import { useEffect } from 'react';
+
 export default function QuoteModal({ onClose }) {
+  useEffect(() => {
+    const handleEsc = (e) => {
+      if (e.key === 'Escape') onClose();
+    };
+    window.addEventListener('keydown', handleEsc);
+    return () => window.removeEventListener('keydown', handleEsc);
+  }, [onClose]);
+
   const handleSubmit = (e) => {
     e.preventDefault();
     alert('Thank you! We\'ll be in touch within 1 business day.');
