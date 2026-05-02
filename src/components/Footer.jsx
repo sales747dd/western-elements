@@ -8,14 +8,14 @@ export default function Footer({ onQuoteOpen }) {
 
           <div className="footer-brand">
             <Link to="/" className="logo-wrap" style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-              <img src="/assets/logo.jpg" alt="WE Logo" className="logo-img" />
+              <img src="/assets/logo.jpg" alt="WES Logo" className="logo-img" />
               <div className="logo-text">
-                <span className="brand">Western Elements</span>
-                <span className="sub">Woodworking</span>
+                <span className="brand">West Elements Studio</span>
+                <span className="sub">Custom Wood Furniture</span>
               </div>
             </Link>
             <p>
-              Handcrafted custom wood furniture and art pieces serving homeowners across 
+              Handcrafted custom tables and live-edge wood furniture serving homeowners across
               British Columbia and Alberta. Every piece built uniquely for you.
             </p>
           </div>
@@ -35,9 +35,9 @@ export default function Footer({ onQuoteOpen }) {
             <h4>Services</h4>
             <ul>
               <li><Link to="/services">Custom Tables</Link></li>
-              <li><Link to="/services">Cutting Boards & Art</Link></li>
-              <li><Link to="/services">Shelving Units</Link></li>
-              <li><Link to="/services">Countertops & Islands</Link></li>
+              <li><Link to="/services">Live-Edge Coffee Tables</Link></li>
+              <li><Link to="/services">Outdoor Furniture</Link></li>
+              <li><Link to="/services">Tailored Commissions</Link></li>
             </ul>
           </div>
 
@@ -64,7 +64,7 @@ export default function Footer({ onQuoteOpen }) {
         </div>
 
         <div className="footer-bottom">
-          <span>&copy; {new Date().getFullYear()} Western Elements Woodworking. All rights reserved.</span>
+          <span>&copy; {new Date().getFullYear()} West Elements Studio. All rights reserved.</span>
           <span>Handcrafted with ❤ in British Columbia</span>
         </div>
       </div>

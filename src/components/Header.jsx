@@ -14,11 +14,11 @@ export default function Header({ onQuoteOpen }) {
   return (
     <header className={`header${scrolled ? ' scrolled' : ''}`}>
       <div className="container header-inner">
-        <Link to="/" className="logo-wrap" aria-label="Western Elements Woodworking Home">
-          <img src="/assets/logo.jpg" alt="WE Logo" className="logo-img" />
+        <Link to="/" className="logo-wrap" aria-label="West Elements Studio Home">
+          <img src="/assets/logo.jpg" alt="WES Logo" className="logo-img" />
           <div className="logo-text">
-            <span className="brand">Western Elements</span>
-            <span className="sub">Woodworking</span>
+            <span className="brand">West Elements Studio</span>
+            <span className="sub">Custom Wood Furniture</span>
           </div>
         </Link>
 

@@ -25,7 +25,7 @@ export default function WhyUs() {
           <span className="section-eyebrow">Why Choose Us</span>
           <h2 className="section-title">Furniture That Means Something</h2>
           <p className="section-subtitle">
-            There are plenty of furniture stores. There's only one Western Elements.
+            There are plenty of furniture stores. There's only one West Elements Studio.
           </p>
         </div>
         <div className="whyus-grid">

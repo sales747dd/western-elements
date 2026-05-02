@@ -13,7 +13,7 @@ export default function Testimonials() {
       initial: 'M',
     },
     {
-      text: "The charcuterie board set we got is gorgeous. Every piece is different and they all work together perfectly. I use them for entertaining constantly and get so many compliments.",
+      text: "Josh built us a stunning live-edge pine table with Lichtenberg burns across the whole top. It's unlike anything I've ever seen — the detail is extraordinary. Every dinner guest is blown away.",
       name: 'Carrie B.',
       location: 'Penticton, BC',
       initial: 'C',

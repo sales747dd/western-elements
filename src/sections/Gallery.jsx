@@ -2,11 +2,11 @@ import { Link } from 'react-router-dom';
 
 export default function Gallery({ preview }) {
   const allItems = [
-    { src: '/assets/img-table-lichtenberg.jpg', label: 'Lichtenberg Fractal Coffee Table' },
-    { src: '/assets/img-board-resin.jpg',       label: 'Blue Resin River Cutting Board' },
-    { src: '/assets/img-surfboard.jpg',          label: 'Sea Turtle Carved Surfboard' },
-    { src: '/assets/img-charcuterie.jpg',        label: 'Charcuterie Board Collection' },
-    { src: '/assets/img-canada-boards.jpg',      label: 'Canada Maple Shelf & Boards Set' },
+    { src: '/assets/img-table-pine.jpg',    label: 'Live-Edge Pine — Silver Lichtenberg' },
+    { src: '/assets/img-table-walnut.jpg',  label: 'Walnut Coffee Table — Teal Resin Inlay' },
+    { src: '/assets/img-table-dining.jpg',  label: 'Custom Dining Table with Slate Inlays' },
+    { src: '/assets/img-table-picnic.jpg',  label: 'Cedar Outdoor Dining Set' },
+    { src: '/assets/img-table-lichtenberg.jpg', label: 'Lichtenberg Fractal Statement Table' },
   ];
 
   const displayedItems = preview ? allItems.slice(0, 3) : allItems;

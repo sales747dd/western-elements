@@ -3,27 +3,27 @@ import { Link } from 'react-router-dom';
 export default function Services({ onQuoteOpen, preview }) {
   const allServices = [
     {
-      title: 'Custom Tables',
-      desc: 'Bespoke hardwood dining tables, live-edge designs, lichtenberg fractal inlays, and blue resin rivers — built to your exact dimensions to become the centerpiece of your family gatherings.',
-      img: '/assets/img-table-lichtenberg.jpg',
+      title: 'Custom Dining Tables',
+      desc: 'Bespoke hardwood dining tables built to your exact dimensions — live-edge slabs, walnut inlays, slate tile accents, and resin rivers that make every family gathering unforgettable.',
+      img: '/assets/img-table-dining.jpg',
       tag: 'Enquire Now',
     },
     {
-      title: 'Cutting Boards',
-      desc: 'Our custom cutting and charcuterie boards combine everyday functionality with striking aesthetic appeal. Stunning blue epoxy accents complement premium hardwoods.',
-      img: '/assets/img-board-resin.jpg',
+      title: 'Live-Edge Coffee Tables',
+      desc: 'Statement coffee tables that stop every conversation. Stunning Lichtenberg fractal burns, teal and silver resin inlays, and natural live edges in walnut, oak, pine, and more.',
+      img: '/assets/img-table-walnut.jpg',
       tag: 'Enquire Now',
     },
     {
-      title: 'Art Pieces',
-      desc: 'Unique decorative wood items and functional art designed to enhance your interior space. Each piece tells a story through detailed craftsmanship and modern design sensibilities.',
-      img: '/assets/img-charcuterie.jpg',
+      title: 'Outdoor Wood Furniture',
+      desc: 'Handcrafted cedar and hardwood outdoor sets built to weather every season. Picnic tables, benches, and garden furniture designed for real families who love the outdoors.',
+      img: '/assets/img-table-picnic.jpg',
       tag: 'Enquire Now',
     },
     {
       title: 'Tailored Commissions',
-      desc: 'We design and build custom woodworking projects to meet specific client requests. Have a unique idea? We will collaborate with you to craft a bespoke functional centerpiece.',
-      img: '/assets/img-surfboard.jpg',
+      desc: 'Have a unique vision? We collaborate with you from concept to delivery — any wood species, any size, any finish. If you can imagine it, we can build it.',
+      img: '/assets/img-table-lichtenberg.jpg',
       tag: 'Enquire Now',
     },
   ];
@@ -35,13 +35,13 @@ export default function Services({ onQuoteOpen, preview }) {
       <div className="container">
         <div className="services-head">
           <span className="section-eyebrow">What We Build</span>
-          <h2 className="section-title">Craftsmanship for Every Corner of Your Home</h2>
+          <h2 className="section-title">Tables That Become Family Heirlooms</h2>
           <p className="section-subtitle">
-            Serving homeowners across BC and Alberta with pieces designed to last a lifetime.
+            Handcrafted tables and wood furniture serving homeowners across BC and Alberta.
           </p>
           {!preview && (
             <p className="section-subtitle" style={{ marginTop: '1rem', color: 'var(--text-light)', maxWidth: 'none' }}>
-              We design and handcraft bespoke wood pieces that blend natural artistry, premium hardwoods, and timeless craftsmanship into functional, lasting centerpieces. Every piece is one-of-a-kind and created in collaboration with you—we bring your dream home to life with custom handcrafted furnishings tailored to your lifestyle and living space.
+              We design and handcraft bespoke tables that blend natural artistry, premium hardwoods, and timeless craftsmanship into the centerpiece of your home. Each piece is one-of-a-kind, built in collaboration with you — tailored to your dimensions, style, and living space.
             </p>
           )}
         </div>

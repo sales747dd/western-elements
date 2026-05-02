@@ -51,10 +51,10 @@ export default function QuoteModal({ onClose }) {
               <label htmlFor="quote-service">Service Interested In</label>
               <select id="quote-service">
                 <option value="">Select a service…</option>
-                <option>Custom Table</option>
-                <option>Shelving Unit</option>
-                <option>Countertop / Island</option>
-                <option>Custom Art Piece</option>
+                <option>Custom Dining Table</option>
+                <option>Live-Edge Coffee Table</option>
+                <option>Outdoor Wood Furniture</option>
+                <option>Tailored Commission</option>
                 <option>Other / Not Sure</option>
               </select>
             </div>
