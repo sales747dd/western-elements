@@ -7,6 +7,8 @@ export default function Gallery({ preview }) {
     { src: '/assets/img-table-dining.jpg',  label: 'Custom Dining Table with Slate Inlays' },
     { src: '/assets/img-table-picnic.jpg',  label: 'Cedar Outdoor Dining Set' },
     { src: '/assets/img-table-lichtenberg.jpg', label: 'Lichtenberg Fractal Statement Table' },
+    { src: '/assets/5334.JPG', label: 'Dining Set with Slate Inlays & Carved Eagle Benches' },
+    { src: '/assets/5348.JPG', label: 'Trestle Dining Table with Carved Bench Set' },
   ];
 
   const displayedItems = preview ? allItems.slice(0, 3) : allItems;
