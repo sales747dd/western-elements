@@ -4,7 +4,6 @@ export default function Hero({ onQuoteOpen }) {
       <div className="hero-bg" aria-hidden="true"></div>
 
       <div className="hero-content">
-        <div className="hero-badge">✦ Custom Tables &amp; Live-Edge Furniture</div>
         <h1>
           Handcrafted Tables<br />
           <em>Built to Last.</em>
@@ -24,8 +23,8 @@ export default function Hero({ onQuoteOpen }) {
       <div className="hero-image-col">
         <div className="hero-img-frame">
           <img
-            src="/assets/img-table-lichtenberg.jpg"
-            alt="Live-edge table with Lichtenberg fractal resin inlays"
+            src="/assets/img-table-edge.jpg"
+            alt="Live-edge table close-up showing natural knots and grain"
           />
         </div>
       </div>
