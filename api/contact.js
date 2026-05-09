@@ -16,7 +16,7 @@ export default async function handler(req, res) {
   try {
     await resend.emails.send({
       from: 'Western Elements Studio <onboarding@resend.dev>',
-      to: 'jackhillmarketing@gmail.com',
+      to: 'josh@westelementsstudio.ca',
       replyTo: email,
       subject: `New Quote Request from ${name}`,
       html: `
