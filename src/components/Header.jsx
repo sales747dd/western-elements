@@ -15,7 +15,7 @@ export default function Header({ onQuoteOpen }) {
     <header className={`header${scrolled ? ' scrolled' : ''}`}>
       <div className="container header-inner">
         <Link to="/" className="logo-wrap" aria-label="West Elements Studio Home">
-          <img src="/assets/logo.jpg" alt="WES Logo" className="logo-img" />
+          <img src="/assets/logo.png" alt="WES Logo" className="logo-img" />
           <div className="logo-text">
             <span className="brand">West Elements Studio</span>
             <span className="sub">Custom Wood Furniture</span>

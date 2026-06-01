@@ -2,13 +2,27 @@ import { Link } from 'react-router-dom';
 
 export default function Gallery({ preview }) {
   const allItems = [
-    { src: '/assets/img-table-pine.jpg',    label: 'Live-Edge Pine — Silver Lichtenberg' },
-    { src: '/assets/img-table-walnut.jpg',  label: 'Walnut Coffee Table — Teal Resin Inlay' },
-    { src: '/assets/img-table-dining.jpg',  label: 'Custom Dining Table with Slate Inlays' },
-    { src: '/assets/img-table-picnic.jpg',  label: 'Cedar Outdoor Dining Set' },
-    { src: '/assets/img-table-lichtenberg.jpg', label: 'Lichtenberg Fractal Statement Table' },
-    { src: '/assets/5334.JPG', label: 'Dining Set with Slate Inlays & Carved Eagle Benches' },
-    { src: '/assets/5348.JPG', label: 'Trestle Dining Table with Carved Bench Set' },
+    { src: '/assets/white-oak-coffee-table-a.jpg',     label: 'White Oak Coffee Table — Epoxy River' },
+    { src: '/assets/complete-white-oak-dining-set.jpg', label: 'Complete White Oak Dining Set' },
+    { src: '/assets/white-oak-dining-set-a.jpg',       label: 'White Oak Dining Set' },
+    { src: '/assets/white-oak-river-bench.jpg',        label: 'White Oak River Bench — Epoxy Inlay' },
+    { src: '/assets/black-river-on-white-oak.jpg',     label: 'Black Epoxy River on White Oak' },
+    { src: '/assets/oak-coffee-table-b.jpg',           label: 'White Oak Coffee Table' },
+    { src: '/assets/oak-coffee-table-c.jpg',           label: 'White Oak Coffee Table — Natural Edge' },
+    { src: '/assets/glowing-lava-table.jpg',           label: 'Glowing Lava Epoxy Table' },
+    { src: '/assets/glowing-lava-table-b.jpg',         label: 'Glowing Lava Table — Detail' },
+    { src: '/assets/lava-table-a.jpg',                 label: 'Lava Epoxy Statement Table' },
+    { src: '/assets/lava-table-b.jpg',                 label: 'Lava Table — Side View' },
+    { src: '/assets/oak-lava-fractals.jpg',            label: 'White Oak with Lava & Fractal Epoxy' },
+    { src: '/assets/epoxy-river-with-fractals.jpg',    label: 'Epoxy River with Fractal Burns' },
+    { src: '/assets/striped-table.jpg',                label: 'Striped Inlay Table' },
+    { src: '/assets/striped-table-b.jpg',              label: 'Striped Table — Alternate View' },
+    { src: '/assets/wolf-head.jpg',                    label: 'Wolf Head Wood Carving' },
+    { src: '/assets/img-table-pine.jpg',               label: 'Live-Edge Pine — Silver Lichtenberg' },
+    { src: '/assets/img-table-dining.jpg',             label: 'Custom Dining Table with Slate Inlays' },
+    { src: '/assets/img-table-picnic.jpg',             label: 'Cedar Outdoor Dining Set' },
+    { src: '/assets/5334.JPG',                         label: 'Dining Set with Slate Inlays & Carved Eagle Benches' },
+    { src: '/assets/5348.JPG',                         label: 'Trestle Dining Table with Carved Bench Set' },
   ];
 
   const displayedItems = preview ? allItems.slice(0, 3) : allItems;

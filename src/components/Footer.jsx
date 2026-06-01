@@ -8,7 +8,7 @@ export default function Footer({ onQuoteOpen }) {
 
           <div className="footer-brand">
             <Link to="/" className="logo-wrap" style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-              <img src="/assets/logo.jpg" alt="WES Logo" className="logo-img" />
+              <img src="/assets/logo.png" alt="WES Logo" className="logo-img" />
               <div className="logo-text">
                 <span className="brand">West Elements Studio</span>
                 <span className="sub">Custom Wood Furniture</span>
